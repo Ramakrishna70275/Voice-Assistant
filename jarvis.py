@@ -70,24 +70,7 @@ if __name__=="__main__":
         elif ' the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"sir the time is {strTime}")
-        elif 'open ganna' in query:
-            webbrowser.open("gaana.com") 
-        #elif 'play music' in query:
-            #music_folder = "C:\Users\rk001\Music\tillu"
-            #random_music = (os.listdir(music_folder))
-            #os.startfile(os.path.join(music_folder,random_music))
-
-#def set_reminder(activity:str, hour:int, minute:int):
-    current_time = datetime.datetime.now()
-    reminder_time = current_time.replace(hour=hour, minute=minute, second=0, microsecond=0)
-    if reminder_time < current_time:
-        reminder_time = reminder_time + datetime.timedelta(days=1)
-    speak(f"Reminder set for {activity} at {reminder_time.strftime('%I:%M %p')}")
-    time.sleep(60)
-    if datetime.datetime.now() > reminder_time:
-        speak(f"Reminder: {activity}")
-#set_reminder("Take Medication", 8, 0)
-#set_reminder("Exercise", 15, 30)  
+      
        
 
           
